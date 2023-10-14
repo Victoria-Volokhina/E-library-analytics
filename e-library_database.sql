@@ -42,13 +42,13 @@ CREATE TABLE IF NOT EXISTS public.interactions
         ON DELETE SET NULL
 );
 
--- Table: public.interactions
+-- Table: public.payments
 
 CREATE TABLE IF NOT EXISTS public.payments
 (
-    user_id     bigint,
-    amount      numeric,
-    date        date,
+    user_id         bigint,
+    amount          numeric,
+    payment_date    date,
     CONSTRAINT interactions_user_id_fkey FOREIGN KEY (user_id)
         REFERENCES public.users (user_id) MATCH SIMPLE
         ON UPDATE CASCADE
