@@ -20,23 +20,6 @@ Welcome to the Electronic Library project! This project involves comprehensive d
   - Implementation of predictive modeling to forecast user churn.
   - Proactive strategies to retain and engage users.
 
-## Workflow
-
-1. **Database Creation:**
-   - Establishing a solid foundation with a well-structured database.
-
-2. **Data Population:**
-   - Populating the database with relevant electronic library data.
-
-3. **Metric Calculation:**
-   - Employing analytical techniques to compute essential product metrics.
-
-4. **User Clustering:**
-   - Utilizing clustering algorithms to group users based on behavior.
-
-5. **Churn Prediction:**
-   - Building predictive models to anticipate user churn and inform retention strategies.
-  
 ## Requirements
 - Python 3.x
 - Jupyter Notebooks
