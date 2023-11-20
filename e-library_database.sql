@@ -4,8 +4,8 @@ CREATE TABLE IF NOT EXISTS public.users
 (
     user_id     bigint NOT NULL,
     age         varchar,
-    sex         real,
-    reg_date    timestamp,
+    sex         integer,
+    reg_date    date,
     CONSTRAINT users_pkey PRIMARY KEY (user_id)
 );
 
@@ -49,8 +49,13 @@ CREATE TABLE IF NOT EXISTS public.payments
     user_id         bigint,
     amount          numeric,
     payment_date    date,
+    item_id         bigint,
     CONSTRAINT interactions_user_id_fkey FOREIGN KEY (user_id)
         REFERENCES public.users (user_id) MATCH SIMPLE
+        ON UPDATE CASCADE
+        ON DELETE SET NULL,
+    CONSTRAINT interactions_item_id_fkey FOREIGN KEY (item_id)
+        REFERENCES public.items (id) MATCH SIMPLE
         ON UPDATE CASCADE
         ON DELETE SET NULL
 );
