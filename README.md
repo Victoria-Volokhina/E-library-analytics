@@ -12,6 +12,9 @@ Welcome to the Electronic Library project! This project involves comprehensive d
   - Calculation and analysis of key product metrics.
   - Insights into user engagement and product performance.
 
+- **A/B experiments:**
+  - Mini-platform designed for conducting AB experiments.
+
 - **User Clustering:**
   - Utilization of clustering techniques to categorize users.
   - Understanding user behavior and preferences.
